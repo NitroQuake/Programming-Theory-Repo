@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject[] dogs;
-    private float posY = 42.0333f;
+    private float posY = 0;
     private float posZ = -31.5f;
     private float startDelay = 3;
     private float repeatRate = 2;

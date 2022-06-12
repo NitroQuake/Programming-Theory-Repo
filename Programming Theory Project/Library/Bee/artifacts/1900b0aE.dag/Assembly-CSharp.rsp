@@ -349,7 +349,10 @@
 "Assets/Scripts/Dogs.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/GermanShepherd.cs"
+"Assets/Scripts/MainManager.cs"
+"Assets/Scripts/MenuUIHandler.cs"
 "Assets/Scripts/Pug.cs"
+"Assets/Scripts/UIHandler.cs"
 -langversion:9.0
 
 /deterministic
