@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
         
     }
 
+    // ABSTRACTION
     private void RandomDog()
     {
         float randomX = Random.Range(-58, -49);

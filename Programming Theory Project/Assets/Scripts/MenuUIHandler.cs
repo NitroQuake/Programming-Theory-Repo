@@ -6,7 +6,7 @@ using TMPro;
 
 public class MenuUIHandler : MonoBehaviour
 {
-    public TMP_InputField input;
+    [SerializeField] TMP_InputField input;
 
     public void StartButton()
     {

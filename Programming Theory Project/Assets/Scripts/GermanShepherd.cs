@@ -7,11 +7,13 @@ public class GermanShepherd : Dogs
     private float speedGS = 6;
     public GameObject bone;
 
-    protected override void DogMoveForward(float speed)
+    // POLYMORPHISM
+    protected override void DogMoveForward()
     {
-        base.DogMoveForward(speedGS);
+        transform.Translate(Vector3.forward * Time.deltaTime * speedGS);
     }
 
+    // POLYMORPHISM
     protected override void SpecialMove(bool tf)
     {
         bone.SetActive(tf);

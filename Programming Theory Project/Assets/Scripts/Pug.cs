@@ -5,13 +5,14 @@ using UnityEngine;
 public class Pug : Dogs
 {
     private float speedP = 2;
-    public GameObject bone;
 
-    protected override void DogMoveForward(float speed)
+    // POLYMORPHISM
+    protected override void DogMoveForward()
     {
-        base.DogMoveForward(speedP);
+        transform.Translate(Vector3.forward * Time.deltaTime * speedP);
     }
 
+    // POLYMORPHISM
     protected override void SpecialMove(bool tf)
     {
         if (tf)

@@ -21,7 +21,10 @@ public abstract class Dogs : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        DogMoveForward(speed);
+        if (canMoveForward)
+        {
+            DogMoveForward();
+        }
 
         if(transform.position.z > zBorder)
         {
@@ -29,14 +32,13 @@ public abstract class Dogs : MonoBehaviour
         }
     }
 
-    protected virtual void DogMoveForward(float speed)
+    // ABSTRACTION
+    protected virtual void DogMoveForward()
     {
-        if (canMoveForward)
-        {
-            transform.Translate(Vector3.forward * Time.deltaTime * speed);
-        }
+        transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
 
+    // ABSTRACTION
     private void DogBark()
     {
         SpecialMove(true);

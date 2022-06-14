@@ -7,6 +7,7 @@ public class Beagle : Dogs
     private Rigidbody beagleRb;
     private float jumpForce = 10;
 
+    // POLYMORPHISM
     protected override void SpecialMove(bool tf)
     {
         if (tf)
